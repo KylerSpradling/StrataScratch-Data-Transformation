@@ -3,8 +3,10 @@ Some event data come as json files and need some transformation to be structured
 
 **1. CuratedOfferOptions.csv:**
 >CurationProvider: in quotes
-OfferId: in quotes
-DealerId: in quotes
+>
+>OfferId: in quotes
+>
+>DealerId: in quotes
 >UniqueOptionId: in quotes
 >OptionId: in quotes
 >IsMobileDealer: without quotes
