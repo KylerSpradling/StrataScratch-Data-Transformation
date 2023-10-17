@@ -7,42 +7,71 @@ Some event data come as json files and need some transformation to be structured
 >OfferId: in quotes
 >
 >DealerId: in quotes
+>
 >UniqueOptionId: in quotes
+>
 >OptionId: in quotes
+>
 >IsMobileDealer: without quotes
+>
 >IsOpen: without quotes
+>
 >Eta: in quotes
+>
 >ChamaScore: without quotes
+>
 >ProductBrand: in quotes
+>
 >IsWinner: without quotes
+>
 >MinimumPrice: without quotes
+>
 >MaximumPrice: without quotes
+>
 >DynamicPrice: without quotes
+>
 >FinalPrice: without quotes
+>
 >DefeatPrimaryReason: in quotes
+>
 >DefeatReasons: in quotes
+>
 >EnqueuedTimeSP: DD/MM/YYYY (converted to Brasilian timezone - UTC-3)
+>
 **2. DynamicPriceOption.csv:**
 >Provider: in quotes
+>
 >OfferId: in quotes
+>
 >UniqueOptionId: in quotes
+>
 >BestPrice: without quotes
+>
 >EnqueuedTimeSP: DD/MM/YYYY (converted to Brasilian timezone - UTC-3)
+>
 **3. DynamicPriceRange.csv:**
->Provider: in quotes
+>Provider: in quotes\
+>
 >OfferId: in quotes
+>
 >MinGlobal: without quotes
+>
 >MinRecommended: without quotes
+>
 >MaxRecommended: without quotes
+>
 >DifferenceMinRecommendMinTheory: without quotes
+>
 >EnqueuedTimeSP: DD/MM/YYYY (converted to Brasilian timezone - UTC-3)
+>
 # Data Description
 You are given one file case.json. Below is an example of a single record from this file:
-'
+```
 {
     "EnqueuedTimeUtc": "2021-09-05 08:04:08 UTC",
     "EventName": "DynamicPrice_Result",
     "Payload": "{\"provider\":\"ApplyDynamicPriceRange\",\"offerId\":\"a6611d55-9624-4381-8cdd-323ee3689241\",\"algorithmOutput\":{\"min_global\":85.0,\"min_recommended\":87.2,\"max_recommended\":97.65,\"differenceMinRecommendMinTheory\":2.2}}"
-  }'
+  }
+```
 # Practicalities
 Make sure that the solution reflects your entire thought process - it is more important how the code is structured rather than the final CSV files.
