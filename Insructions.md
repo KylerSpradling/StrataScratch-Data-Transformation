@@ -2,9 +2,9 @@
 Some event data come as json files and need some transformation to be structured as tables. Convert the case.json file to 3 csv files, using the programming language of your choice, with the following rules:
 
 **1. CuratedOfferOptions.csv:**
->CurationProvider: in quotes/
->OfferId: in quotes/
->DealerId: in quotes
+>CurationProvider: in quotes
+OfferId: in quotes
+DealerId: in quotes
 >UniqueOptionId: in quotes
 >OptionId: in quotes
 >IsMobileDealer: without quotes
